@@ -7,26 +7,74 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Colors</title>
   </head>
-  <body>
+  <body class="bg-gray-700">
     <!-- Default colors -->
     <!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
 
     <!-- Text Colors -->
+    <p class="text-black">Tailwind is awesome</p>
+    <p class="text-white">Tailwind is awesome</p>
+    <p class="text-red-500">Tailwind is awesome</p>
+    <p class="text-green-800">Tailwind is awesome</p>
+    <p class="text-blue-500">Tailwind is awesome</p>
+    <p class="text-teal-300">Tailwind is awesome</p>
 
     <!-- Background Colors -->
+    <p class="bg-pink-400">Tailwind is awesome</p>
+    <p class="bg-emerald-400">Tailwind is awesome</p>
+    <p class="bg-slate-500 text-yellow-500">Tailwind is awesome</p>
+    <p class="bg-indigo-500">Tailwind is awesome</p>
+    <p class="bg-black text-yellow-500">Tailwind is awesome</p>
 
     <!-- Text Underline -->
+    <p class="underline text-white decoration-blue-400">Tailwind is awesome</p>
+    <p class="underline text-white decoration-red-400">Tailwind is awesome</p>
+    <p class="underline text-white decoration-yellow-500">Hello world</p>
 
     <!-- Border Colors -->
+    <input type="text" class="border border-blue-400" />
+    <input type="text" class="border border-orange-400" />
+    <input type="text" class="border border-red-400" />
 
     <!-- Divide Colors -->
-
+    <div class="divide-y divide-red-400">
+      <div class="text-red-500">Item 1</div>
+      <div class="text-red-500/50">Item 2</div>
+      <div class="text-red-500/20">Item 3</div>
+      <div>Item 4</div>
+      <div>Item 5</div>
+    </div>
     <!-- Outline Colors -->
+    <button class="outline outline-blue-300 bg-blue-400">Save</button>
 
     <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+    <button
+      class="shadow-md bg-red-500 text-white mb-4 rounded shadow-gray-800 p-2"
+    >
+      Subscribe
+    </button>
+
+    <button
+    class="shadow-md bg-red-500 text-white mb-4 rounded shadow-blue-100/90 p-2"
+  >
+    Subscribe
+  </button>
+
 
     <!-- Accent Colors -->
+    <input type="checkbox" class="accent-purple-500" checked>
+    <input type="checkbox" class="w-12 h-12 outline accent-purple-500" checked>
+    <input type="checkbox" class="w-6 h-6 accent-cyan-500" checked>
 
     <!-- Arbitrary Colors -->
+    <div class="bg-[#fff]">
+      Hello
+    </div>
+    <div class="bg-[red]">
+      Hello
+    </div>
+    <div class="bg-[rgb(0,100,0)]">
+      Hello
+    </div>
   </body>
 </html>
