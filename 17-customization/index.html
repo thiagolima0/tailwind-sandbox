@@ -8,23 +8,44 @@
     <title>Customization</title>
   </head>
   <body
-    class="bg-black sm:bg-green-800 md:bg-primary lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"
+    class="md:bg-primary bg-black sm:bg-green-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"
   >
-    <h1 class="text-white text-xl md:text-3xl xl:text-5xl">
+    <h1 class="text-xl text-white md:text-3xl xl:text-5xl">
       Tailwind is awesome
     </h1>
+
+    <div class="flex h-screen w-full items-center justify-center">
+      <div
+        class="flex h-48 w-80 px-10 flex-col justify-between rounded-lg bg-gradient-to-r from-purple-400 to-orange-500 shadow-lg"
+      >
+        <div class="flex h-1/3 w-1/3 items-center justify-start">
+          <span class="text-5xl">&#128077;</span>
+        </div>
+        <div
+          class="flex h-12 w-full items-center text-2xl font-semibold text-white opacity-90"
+        >
+          <span>0000 0000 0000 0000</span>
+        </div>
+        <div
+          class="flex h-12 items-center justify-between font-semibold text-white opacity-80"
+        >
+          <span class="uppercase">jane applessed</span>
+          <span>00/00</span>
+        </div>
+      </div>
+    </div>
 
     <script>
       function showBrowserWidth() {
         const width =
           window.innerWidth ||
           document.documentElement.clientWidth ||
-          document.body.clientWidth
+          document.body.clientWidth;
 
-        document.querySelector('h1').innerHTML = `Width: ${width}`
+        document.querySelector("h1").innerHTML = `Width: ${width}`;
       }
-      window.onload = showBrowserWidth
-      window.onresize = showBrowserWidth
+      window.onload = showBrowserWidth;
+      window.onresize = showBrowserWidth;
     </script>
   </body>
 </html>
