@@ -1,15 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
     <title>Dark Mode</title>
   </head>
   <body>
     <!-- By default, you can have your project use whatever mode your OS is using. You can use "dark:{class}". You can also set your config to use a class instead of using your OS mode -->
+
+    <div
+      class="container mx-auto rounded-xl bg-white py-8 px-6 shadow-xl dark:bg-slate-900"
+    >
+      <h3 class="font-medium tracking-tight text-slate-900 dark:text-white">
+        Hello
+      </h3>
+      <p class="text-slate-500 dark:text-slate-400">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit
+        veniam nesciunt fuga eveniet delectus inventore neque mollitia
+        voluptatem similique vitae commodi, fugiat maiores quod est quia quis
+        esse, qui eligendi.
+      </p>
+    </div>
+
+    <label
+      for="toggle"
+      class="relative ml-12 mt-4 inline-flex cursor-pointer items-center"
+    >
+      <input
+        type="checkbox"
+        value=""
+        id="toggle"
+        class="peer sr-only"
+      />
+      <div
+        class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-blue-600 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-700 dark:peer-focus:ring-blue-800"
+      ></div>
+    </label>
+
+    <script>
+      document.getElementById('toggle').addEventListener('change', function() {
+        if (this.checked) {
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+
+        }
+      })
+    </script>
   </body>
+
 </html>
 
 <!-- Credit for toggle button style
